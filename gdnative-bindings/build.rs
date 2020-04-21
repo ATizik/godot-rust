@@ -5,7 +5,7 @@ use std::fs::File;
 use std::path::PathBuf;
 
 fn main() {
-    let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
+    let out_path = PathBuf::from("src");
     let mut types_output = File::create(out_path.join("bindings_types.rs")).unwrap();
     let mut traits_output = File::create(out_path.join("bindings_traits.rs")).unwrap();
     let mut methods_output = File::create(out_path.join("bindings_methods.rs")).unwrap();
