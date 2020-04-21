@@ -8,6 +8,7 @@ version = "0.8.0"
 license = "MIT"
 workspace = ".."
 edition = "2018"
+build = "build.rs"
 
 [dependencies]
 gdnative-sys = { path = "../gdnative-sys", version = "0.8.0" }
